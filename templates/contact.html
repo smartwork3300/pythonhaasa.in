@@ -1,0 +1,49 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'styles/shared.css' %}" />
+    <link rel="stylesheet" href="{%  static 'styles/contact.css' %}" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <img
+        src="{% static 'images/contact-banner.jpg' %}"
+        alt=""
+        class="img-fluid mb-4"
+      />
+    </div>
+
+    <div class="container form">
+      <div class="row">
+        <div class="col-md-6">
+          <label>Name </label>
+          <input type="text" /><br /><br />
+
+          <label>Email Address</label>
+          <input type="email" /><br /><br />
+
+          <label>Phone Number</label>
+          <input type="number" /><br /><br />
+
+          <label>Message Us</label>
+          <textarea rows="4"></textarea>
+
+          <button class="btn submit">Submit &nbsp;</button>
+        </div>
+
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31344.33480601685!2d78.39302711754202!3d17.435627383103686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91426aaaaaab%3A0x5955daa8e503a1e!2sShree%20Haasa!5e0!3m2!1sen!2sin!4v1648642565253!5m2!1sen!2sin"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock content %}

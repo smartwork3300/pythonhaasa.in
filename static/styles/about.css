@@ -1,0 +1,21 @@
+.features {
+  margin-bottom: 35px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #fff;
+
+  min-height: 290px;
+}
+/* .features {
+   border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; 
+  border-radius: 20px;
+} */
+
+.about p {
+  text-align: justify;
+}
